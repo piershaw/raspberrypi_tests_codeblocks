@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1491360353 source:/home/pi/Documents/pier/main.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<wiringPi.h>
+
+1491352946 /home/pi/wiringPi/wiringPi/wiringPi.h
+
+1491449859 source:/home/pi/raspberrypi_tests_codeblocks/src/Test.cpp
+	"Test.h"
+	<cstdlib>
+	<stdlib.h>
+
+1491448844 /home/pi/raspberrypi_tests_codeblocks/include/Test.h
+

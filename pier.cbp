@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pier" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/pier" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/pier" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl-config --cflags`" />
+			<Add directory="../../SDL_PI/include" />
+			<Add directory="../../wiringPi/wiringPi" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl-config --libs`" />
+			<Add library="SDL_PI/lib/libSDL2.a" />
+			<Add library="../../../usr/lib/libwiringPi.so" />
+			<Add directory="../../SDL_PI/include" />
+			<Add directory="../../wiringPi/wiringPi" />
+		</Linker>
+		<Unit filename="cb.bmp" />
+		<Unit filename="include/Test.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Test.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
